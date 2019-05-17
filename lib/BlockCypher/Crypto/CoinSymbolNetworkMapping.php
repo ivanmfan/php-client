@@ -39,7 +39,11 @@ class CoinSymbolNetworkMapping
                     ->setNetMagicBytes('c0c0c0c0');
                 break;
             case 'dash':
-                $network = NetworkFactory::dash();
+                $network = NetworkFactory::create('4c', '10', 'cc')
+                    ->setHDPubByte('02fe52f8')
+                    ->setHDPrivByte('02fe52cc')
+                    ->setNetMagicBytes('bd6b0cbf');
+                return $network;
                 break;
             case 'bcy':
                 // TODO: check ef, 043587cf, 04358394, d9b4bef9 values
