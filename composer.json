@@ -1,5 +1,5 @@
 {
-  "name": "ivanmfan/php-client",
+  "name": "blockcypher/php-client",
   "description": "BlockCypher's PHP SDK for REST API",
   "keywords": [
     "blockcypher",
