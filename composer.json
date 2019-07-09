@@ -21,7 +21,8 @@
     "php": ">=5.5.0",
     "ext-curl": "*",
     "ext-json": "*",
-    "bitwasp/bitcoin": "0.0.7.*"
+    "DrSlump/Protobuf-PHP": "dev-master",
+    "bitwasp/bitcoin": "dev-composerFix"
   },
   "require-dev": {
     "phpunit/phpunit": "4.6.*",
@@ -31,5 +32,15 @@
     "psr-0": {
       "BlockCypher": "lib/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ivanmfan/bitcoin-php"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/drslump/Protobuf-PHP"
+    }
+  ]
 }
